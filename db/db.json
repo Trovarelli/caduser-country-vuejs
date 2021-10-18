@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "name": "José Trovarelli Neto",
+      "date": "19/05/1995",
+      "cpf": "43055935802",
+      "cep": "17201310",
+      "logradouro": "Rua Saldanha Marinho, 1234 ",
+      "bairro": "Centro",
+      "cidade": "Jaú",
+      "estado": "SP",
+      "id": 1
+    },
+    {
+      "name": "José  Aparecida Gonçalves Maria Joaquina de Abrãão Carvalho",
+      "date": "19/05/1995",
+      "cpf": "43055935802",
+      "cep": "17201045",
+      "logradouro": "Avenida Ayrton Senna, 401 pracinha",
+      "bairro": "Centro",
+      "cidade": "Jaú",
+      "estado": "SP",
+      "id": 2
+    }
+  ]
+}
