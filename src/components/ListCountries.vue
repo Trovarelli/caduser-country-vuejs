@@ -69,17 +69,12 @@
         <div @click="listaSAARC = false" class="country-region-hide" v-show="listaSAARC">Ocultar países &#128071;</div>
         <div class="country-region" @click="rgList(saarc)">SAARC:</div>
         <div v-show="listaSAARC" class="country-list-region" v-for="(country) in rgSAARCList" :key="country.name">{{country}}</div>
-
         
-
-
-        
-
     </div>
 </template>
 
 <script>
-    import countriesData from '../services/countries'
+    
     export default {
         name: 'ListOfCountries',
         data(){
