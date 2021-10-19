@@ -78,7 +78,6 @@
 
         methods: {
             getProp(){
-                this.props = Object.getOwnPropertyDescriptors(this.brasil)
                 this.listaDB = true
                 this.props = Object.entries(this.brasil[0])
 
@@ -90,10 +89,53 @@
                 let infoBrasilValoress = this.props
                     .map((element) => {
                         return element[1]    
-                    })
-
+                    })    
                 this.infoBrasilAtributos = infoBrasilAtributoss
                 this.infoBrasilValores = infoBrasilValoress
+                console.log(this.infoBrasilValores)
+/*
+            --Ainda estou trabalhando em um jeito melhor de listar, por enquanto este é o progresso salvo--
+            
+                <div id="country-list-brasil" v-show="listaDB" v-for="(prop, index) in valores" :key="index">{{prop}} </div>
+            
+                let infoBrasilAtributoss = this.props
+                    .map((element) => {
+                        return element[0]
+                    })
+                this.atributos = infoBrasilAtributoss
+
+                for(var [key, value] of this.props){           
+                    if(typeof key === 'object' || typeof value === 'object'){
+                        for(var [key1, value1] of Object.entries(value)){
+                            if( typeof key1 === 'object' || typeof value1 === 'object'){
+                                for(var [key2, value2] of Object.entries(value1)){
+                                    if(typeof key2 === 'object' || typeof value2 === 'object'){
+                                        for(var [key3, value3] of Object.entries(value2)){
+                                             if(typeof key3 === 'object' || typeof value3 === 'object'){
+                                                for(var [key4, value4] of Object.entries(value3)){
+                                                    if(typeof key4 === 'object' || typeof value4 === 'object'){
+                                                        for(var [key5, value5] of Object.entries(value4)){
+                                                            this.valores.push(key5, value5)
+                                                        }
+                                                    }                
+                                                    this.valores.push(key4, value4)
+                                                }
+                                            }        
+                                            this.valores.push(key3, value3)
+                                        }
+                                    }     
+                                    this.valores.push(key2, value2)
+                                } 
+                            }
+                            this.valores.push(key1, value1)
+                        } 
+                    }
+                    this.valores.push(key, value)
+                }
+                console.log(typeof this.valores)
+
+                console.log(this.valores)
+*/
             },
             filterBrasil(){
                 setTimeout(() => {
