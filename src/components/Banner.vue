@@ -1,7 +1,7 @@
 <template>
     <div id="div-pai">
         <div id="anuncio">
-            <h1>Olá, seja bem vindo!</h1>
+            <h1>Olá, seja bem-vindo!</h1>
         </div>
         <div id="animation">
             <img id="blowFish" src="img/blowFish.png">
@@ -46,7 +46,6 @@ export default {
         height: 90px;
         z-index: -9;
         animation: FadeIn 4s ease-out;
-       
         animation-duration: 80s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;

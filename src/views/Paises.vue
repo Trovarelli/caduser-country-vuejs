@@ -1,7 +1,5 @@
 <template>
     <div id="main-div">
-      <img id="left-img" src="/img/leftSide.png" alt="continente">
-      <img id="rigth-img" src="/img/rigthSide.png" alt="continente">
       <div class ="main-container">
         <div class="main-container-p">
           <h1>Lista de Países</h1>
@@ -23,6 +21,11 @@ export default {
 </script>
 
 <style scoped>
+
+  .main-container {
+    z-index: 1;
+  }
+
   .main-container-p {
     margin-top: 150px
   }
@@ -42,8 +45,9 @@ export default {
     position: absolute;
     width: 700px;
     height: 350px;
-    margin-left: 47%;
+    margin-left: 1500px;
     z-index: -1;
   }
+
   
 </style>

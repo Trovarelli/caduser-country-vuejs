@@ -42,7 +42,6 @@
         <div class="country-region" @click="regionAntartic">Antártida:</div>
         <div v-show="listaRAN" class="country-list-region">Este continente não possui países &#128517;</div>
 
-
     </div>
 </template>
 
