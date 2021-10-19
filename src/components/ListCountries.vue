@@ -149,87 +149,6 @@
                 const data = await req.json()
                 this.brasil = data
             },
-             getProp(){
-                this.listaDB = true
-                this.props = Object.entries(this.brasil[0])
-
-                let infoBrasilAtributoss = this.props
-                    .map((element) => {
-                        return element[0]
-                    })
-
-                let infoBrasilValoress = this.props
-                    .map((element) => {
-                        return element[1]    
-                    })    
-                this.infoBrasilAtributos = infoBrasilAtributoss
-                this.infoBrasilValores = infoBrasilValoress
-
-              /* TODO 
-
-              if(typeof element[1] === 'object'){
-                            for(var [key, value] of Object.entries(element)){
-                                this.infoBrasilValores.push(`${key}: ${value}`)
-                            }
-                        }
-                        if(typeof element[1] === 'object'){
-                            let caraio = element.map((innerElement) => {
-                                if(typeof innerElement === 'array'){
-                                    console.log('caraio')
-                                    let caraio2 = innerElement.map((innerInnerElement) => {
-                                        return innerInnerElement
-                                    })
-                                    this.infoBrasilValores.push(caraio2)
-                                }
-                                else return innerElement
-                            })
-                            console.log(caraio)
-                            this.infoBrasilValores.push(caraio)
-                        }
-                        else 
-
-              ------------------------------------------------------
-                this.props = Object.entries(this.brasil[0])
-                console.log(this.props)
-                let infoBrasilAtributoss = this.props
-                    .map((element) => {
-                        return element[0]
-                    })
-                this.atributos = infoBrasilAtributoss
-
-                for(var [key, value] of this.props){           
-                    if(typeof key === 'object' || typeof value === 'object'){
-                        for(var [key1, value1] of Object.entries(value)){
-                            if( typeof key1 === 'object' || typeof value1 === 'object'){
-                                for(var [key2, value2] of Object.entries(value1)){
-                                    if(typeof key2 === 'object' || typeof value2 === 'object'){
-                                        for(var [key3, value3] of Object.entries(value2)){
-                                             if(typeof key3 === 'object' || typeof value3 === 'object'){
-                                                for(var [key4, value4] of Object.entries(value3)){
-                                                    if(typeof key4 === 'object' || typeof value4 === 'object'){
-                                                        for(var [key5, value5] of Object.entries(value4)){
-                                                            this.valores.push(key5, value5)
-                                                        }
-                                                    }                
-                                                    this.valores.push(key4, value4)
-                                                }
-                                            }        
-                                            this.valores.push(key3, value3)
-                                        }
-                                    }     
-                                    this.valores.push(key2, value2)
-                                } 
-                            }
-                            this.valores.push(key1, value1)
-                        } 
-                    }
-                    this.valores.push(key, value)
-                }
-                console.log(typeof this.valores)
-
-                console.log(this.valores) */
-
-            },
             async rgList(country){ 
                 if(country === 'eu'){
                     this.listaEU = true
@@ -442,6 +361,86 @@
                         return `${name.name.common}, capital: ${name.capital}.`
                     })
                 this.americanC = countryInfo
+            },
+            getProp(){
+                this.listaDB = true
+                this.props = Object.entries(this.brasil[0])
+
+                let infoBrasilAtributoss = this.props
+                    .map((element) => {
+                        return element[0]
+                    })
+
+                let infoBrasilValoress = this.props
+                    .map((element) => {
+                        return element[1]    
+                    })    
+                this.infoBrasilAtributos = infoBrasilAtributoss
+                this.infoBrasilValores = infoBrasilValoress
+
+              /* TODO 
+
+              if(typeof element[1] === 'object'){
+                            for(var [key, value] of Object.entries(element)){
+                                this.infoBrasilValores.push(`${key}: ${value}`)
+                            }
+                        }
+                        if(typeof element[1] === 'object'){
+                            let voidArr = element.map((innerElement) => {
+                                if(typeof innerElement === 'array'){
+                                    let voidArr2 = innerElement.map((innerInnerElement) => {
+                                        return innerInnerElement
+                                    })
+                                    this.infoBrasilValores.push(voidArr2)
+                                }
+                                else return innerElement
+                            })
+                            console.log(voidArr)
+                            this.infoBrasilValores.push(voidArr)
+                        }
+                        else 
+
+              ------------------------------------------------------
+                this.props = Object.entries(this.brasil[0])
+                console.log(this.props)
+                let infoBrasilAtributoss = this.props
+                    .map((element) => {
+                        return element[0]
+                    })
+                this.atributos = infoBrasilAtributoss
+
+                for(var [key, value] of this.props){           
+                    if(typeof key === 'object' || typeof value === 'object'){
+                        for(var [key1, value1] of Object.entries(value)){
+                            if( typeof key1 === 'object' || typeof value1 === 'object'){
+                                for(var [key2, value2] of Object.entries(value1)){
+                                    if(typeof key2 === 'object' || typeof value2 === 'object'){
+                                        for(var [key3, value3] of Object.entries(value2)){
+                                             if(typeof key3 === 'object' || typeof value3 === 'object'){
+                                                for(var [key4, value4] of Object.entries(value3)){
+                                                    if(typeof key4 === 'object' || typeof value4 === 'object'){
+                                                        for(var [key5, value5] of Object.entries(value4)){
+                                                            this.valores.push(key5, value5)
+                                                        }
+                                                    }                
+                                                    this.valores.push(key4, value4)
+                                                }
+                                            }        
+                                            this.valores.push(key3, value3)
+                                        }
+                                    }     
+                                    this.valores.push(key2, value2)
+                                } 
+                            }
+                            this.valores.push(key1, value1)
+                        } 
+                    }
+                    this.valores.push(key, value)
+                }
+                console.log(typeof this.valores)
+
+                console.log(this.valores) */
+
             },
             
             
