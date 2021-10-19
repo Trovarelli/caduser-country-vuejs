@@ -223,9 +223,17 @@
 
                     this.cadastrado = true
 
-                    let dataFormat = this.date.split('-').reverse().join('/')
-                    let cpfFormat = this.cpf.replaceAll('-', '').replaceAll('.', '')
-                    let cepFormat = this.cep.replaceAll('-', '').replaceAll('.', '')
+                    let dataFormat = this.date
+                        .split('-')
+                        .reverse().join('/')
+                    let cpfFormat = this.cpf
+                        .replaceAll('-', '')
+                        .replaceAll('.', '')
+                        .replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4")
+                    let cepFormat = this.cep
+                        .replaceAll('-', '')
+                        .replaceAll('.', '')
+                        .replace(/(\d{5})(\d{2})/, "$1-$2")
 
                     const data = {
                         name: `${this.name} ${this.lastName}`,
