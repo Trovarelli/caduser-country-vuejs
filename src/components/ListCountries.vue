@@ -19,57 +19,57 @@
         <div id="region-div">Blocos Regionais:</div>
         
         <div @click="listaEU = false" class="country-region-hide" v-show="listaEU">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(eu)">EU:</div>
+        <div class="country-region" @click="rgList(eu)">EU (European Union):</div>
         <div v-show="listaEU" class="country-list-region" v-for="(country) in rgEUList" :key="country.name">{{country}}</div>
 
         <div @click="listaEFTA = false" class="country-region-hide" v-show="listaEFTA">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(efta)">EFTA:</div>
+        <div class="country-region" @click="rgList(efta)">EFTA (European Free Trade Association):</div>
         <div v-show="listaEFTA" class="country-list-region" v-for="(country) in rgEFTAList" :key="country.name">{{country}}</div>
 
         <div @click="listaCARICOM = false" class="country-region-hide" v-show="listaCARICOM">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(caricom)">CARICOM:</div>
+        <div class="country-region" @click="rgList(caricom)">CARICOM (Caribbean Community):</div>
         <div v-show="listaCARICOM" class="country-list-region" v-for="(country) in rgCARICOMList" :key="country.name">{{country}}</div>
 
         <div @click="listaPA = false" class="country-region-hide" v-show="listaPA">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(pa)">PA:</div>
+        <div class="country-region" @click="rgList(pa)">PA (Pacific Alliance):</div>
         <div v-show="listaPA" class="country-list-region" v-for="(country) in rgPAList" :key="country.name">{{country}}</div>
 
         <div @click="listaAU = false" class="country-region-hide" v-show="listaAU">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(au)">AU:</div>
+        <div class="country-region" @click="rgList(au)">AU (African Union):</div>
         <div v-show="listaAU" class="country-list-region" v-for="(country) in rgAUList" :key="country.name">{{country}}</div>
 
         <div @click="listaUSAN = false" class="country-region-hide" v-show="listaUSAN">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(usan)">USAN:</div>
+        <div class="country-region" @click="rgList(usan)">USAN (Union of South American Nations):</div>
         <div v-show="listaUSAN" class="country-list-region" v-for="(country) in rgUSANList" :key="country.name">{{country}}</div>
 
         <div @click="listaEEU = false" class="country-region-hide" v-show="listaEEU">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(eeu)">EEU:</div>
+        <div class="country-region" @click="rgList(eeu)">EEU (Eurasian Economic Union):</div>
         <div v-show="listaEEU" class="country-list-region" v-for="(country) in rgEEUList" :key="country.name">{{country}}</div>
 
         <div @click="listaAL = false" class="country-region-hide" v-show="listaAL">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(al)">AL:</div>
+        <div class="country-region" @click="rgList(al)">AL (Arab League):</div>
         <div v-show="listaAL" class="country-list-region" v-for="(country) in rgALList" :key="country.name">{{country}}</div>
 
         <div @click="listaASEAN = false" class="country-region-hide" v-show="listaASEAN">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(asean)">ASEAN:</div>
+        <div class="country-region" @click="rgList(asean)">ASEAN (Association of Southeast Asian Nations):</div>
         <div v-show="listaASEAN" class="country-list-region" v-for="(country) in rgASEANList" :key="country.name">{{country}}</div>
         
         <div @click="listaCAIS = false" class="country-region-hide" v-show="listaCAIS">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(cais)">CAIS:</div>
+        <div class="country-region" @click="rgList(cais)">CAIS (Central American Integration System):</div>
         <div v-show="listaCAIS" class="country-list-region" v-for="(country) in rgCAISList" :key="country.name">{{country}}</div>
 
         <div @click="listaCEFTA = false" class="country-region-hide" v-show="listaCEFTA">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(cefta)">CEFTA:</div>
+        <div class="country-region" @click="rgList(cefta)">CEFTA (Central European Free Trade Agreement):</div>
         <div v-show="listaCEFTA" class="country-list-region" v-for="(country) in rgCEFTAList" :key="country.name">{{country}}</div>
 
         <div @click="listaNAFTA = false" class="country-region-hide" v-show="listaNAFTA">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(nafta)">NAFTA:</div>
+        <div class="country-region" @click="rgList(nafta)">NAFTA (North American Free Trade Agreement):</div>
         <div v-show="listaNAFTA" class="country-list-region" v-for="(country) in rgNAFTAList" :key="country.name">{{country}}</div>
 
         <div @click="listaSAARC = false" class="country-region-hide" v-show="listaSAARC">Ocultar países &#128071;</div>
-        <div class="country-region" @click="rgList(saarc)">SAARC:</div>
+        <div class="country-region" @click="rgList(saarc)">SAARC (South Asian Association for Regional Cooperation):</div>
         <div v-show="listaSAARC" class="country-list-region" v-for="(country) in rgSAARCList" :key="country.name">{{country}}</div>
-        
+
     </div>
 </template>
 
@@ -164,7 +164,6 @@
                     })    
                 this.infoBrasilAtributos = infoBrasilAtributoss
                 this.infoBrasilValores = infoBrasilValoress
-                console.log(this.infoBrasilValores)
 
               /* TODO 
 
@@ -471,11 +470,25 @@
 <style scoped>
 
     #main-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         background-color: whitesmoke;
         padding: 50px;
         box-shadow: 5px 2px 2px rgba(34, 34, 34, 0.281);
         border-radius: 20px;
     }
+
+    .country-region {
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        cursor: pointer;
+        width: 500px;
+        font-size: 20px;
+        margin: 20px;
+    }
+
 
     #country-list-brasil {
         font-weight: bold;
@@ -515,15 +528,6 @@
         border: 3px solid #65A29C;
     }
 
-    .country-region {
-        display: flex;
-        font-weight: bold;
-        justify-content: flex-start;
-        cursor: pointer;
-        font-size: 20px;
-        margin: 20px;
-    }
-
     .country-list-region {
         display: flex;
         justify-content: flex-start;
@@ -539,7 +543,7 @@
     }
 
     .country-region-hide {
-        margin: auto 20px;
+        margin: auto 25%;
         font-weight: bold;
         cursor: pointer;
     }
