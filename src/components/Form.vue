@@ -20,7 +20,7 @@
             </div>
             <div class="input-container">
                 <label for="date">Data de nascimento:</label>
-                <input class="input-countainer-label" type="date" id="date" name="date" v-model="date" onchange="validardataDeNascimento(this.date)"  placeholder="digite a data do seu nascimento">
+                <input class="input-countainer-label" type="date" id="date" name="date" v-model="date" placeholder="digite a data do seu nascimento">
             </div>
             <div class="input-container">
                 <label for="cpf">CPF:</label>
@@ -85,7 +85,7 @@
                 date: null,
                 cpf: null,
                 cep: null,
-                rua: null,
+                rua: "",
                 numero: null,
                 complemento: "",
                 bairro: null,
@@ -164,49 +164,49 @@
                     return true
                 }
 
-                if ((this.name === null) ||
-                (this.lastName === null) ||
-                (this.date === null) ||
-                (this.cpf === null) ||
-                (this.cep === null) ||
-                (this.rua === null) ||
-                (this.numero === null) ||
-                (this.cidade === null) ||
-                (this.bairro === null) ||
-                (this.estado === null) ||
+                if ((this.name === null || this.name === "" ) ||
+                (this.lastName === null || this.lastName === "") ||
+                (this.date === null || this.date === "") ||
+                (this.cpf === null || this.cpf === "") ||
+                (this.cep === null || this.cep === "") ||
+                (this.rua === null || this.rua === "") ||
+                (this.numero === null || this.numero === "") ||
+                (this.cidade === null || this.cidade === "") ||
+                (this.bairro === null || this.bairro === "") ||
+                (this.estado === null || this.estado === "") ||
                 (this.valido !== true))
                 {
                     if (this.name && this.lastName && this.date && this.cpf && this.cep  && this.rua &&this.numero && this.bairro  && this.cidade  && this.estado && this.valido) {
                         return true
                     }
-                    if (this.name == null) {
+                    if (this.name == null || this.name === "") {
                         this.errors.push('O campo Nome é obrigatório.')
                     }
-                    if (this.lastName == null) {
+                    if (this.lastName == null || this.lastName === "") {
                         this.errors.push('O campo Sobrenome é obrigatório.')
                     }
-                    if (this.date == null) {
+                    if (this.date == null || this.date === "") {
                         this.errors.push('A campo Data de nascimento é obrigatório.')
                     }
-                    if (this.cpf == null) {
+                    if (this.cpf == null || this.cpf === "") {
                         this.errors.push('O campo CPF é obrigatório.')
                     }
-                    if (this.cep == null) {
+                    if (this.cep == null || this.cep === "") {
                         this.errors.push('O campo CEP é obrigatório.')
                     }
-                    if (this.rua == null) {
+                    if (this.rua == null || this.rua == "") {
                         this.errors.push('O campo Logradouro é obrigatório.')
                     }
-                    if (this.numero == null) {
+                    if (this.numero == null || this.numero === "") {
                         this.errors.push('O campo Número é obrigatório.')
                     }
-                    if (this.bairro == null) {
+                    if (this.bairro == null || this.bairro === "") {
                         this.errors.push('O campo Bairro é obrigatório.')
                     }
-                    if (this.cidade == null) {
+                    if (this.cidade == null || this.cidade === "") {
                         this.errors.push('O campo Cidade é obrigatório.')
                     }
-                    if (this.estado == null) {
+                    if (this.estado == null || this.estado === "") {
                         this.errors.push('O campo Estado é obrigatório.')
                     }
                     if(this.valido !== true) {

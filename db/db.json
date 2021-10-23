@@ -1,26 +1,15 @@
 {
   "users": [
     {
-      "name": "José Trovarelli Neto",
-      "date": "19/05/1995",
-      "cpf": "414.878.020-64",
+      "name": "José Augusto Sergiano",
+      "date": "05/11/1996",
+      "cpf": "364.008.500-07",
       "cep": "17201-045",
-      "logradouro": "Avenida Ayrton Senna, 401 pracinha",
+      "logradouro": "Avenida Ayrton Senna, 555 ",
       "bairro": "Centro",
       "cidade": "Jaú",
       "estado": "SP",
       "id": 1
-    },
-    {
-      "name": "Amanda Joaquina Sebastian",
-      "date": "05/12/1988",
-      "cpf": "116.641.170-24",
-      "cep": "17201-310",
-      "logradouro": "Rua Saldanha Marinho, 555 fundo",
-      "bairro": "Centro",
-      "cidade": "Jaú",
-      "estado": "SP",
-      "id": 2
     }
   ]
 }
