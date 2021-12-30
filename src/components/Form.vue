@@ -172,7 +172,7 @@
                 (this.rua === null || this.rua === "") ||
                 (this.numero === null || this.numero === "") ||
                 (this.cidade === null || this.cidade === "") ||
-                (this.bairro === null || this.bairro === "") ||
+                (this.bairro === null || this.bairro === "") || 
                 (this.estado === null || this.estado === "") ||
                 (this.valido !== true))
                 {

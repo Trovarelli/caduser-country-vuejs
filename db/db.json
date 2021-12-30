@@ -10,6 +10,50 @@
       "cidade": "Jaú",
       "estado": "SP",
       "id": 1
+    },
+    {
+      "name": "Kelve Escaravelho Baldinho",
+      "date": "05/11/1998",
+      "cpf": "364.008.500-07",
+      "cep": "31035-160",
+      "logradouro": "Rua Nossa Senhora D'ajuda, 555 ",
+      "bairro": "Horto Florestal",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "id": 2
+    },
+    {
+      "name": "Rafael Antoniassi",
+      "date": "19/05/1995",
+      "cpf": "391.625.878-89",
+      "cep": "17250-000",
+      "logradouro": "Rua Professor Gérson Rodrigues, 751 ",
+      "bairro": "Vila Cidade Universitária",
+      "cidade": "Bariri",
+      "estado": "SP",
+      "id": 3
+    },
+    {
+      "name": "José Trovarelli",
+      "date": "19/05/1995",
+      "cpf": "391.625.878-89",
+      "cep": "14406-652",
+      "logradouro": "Rua Francisco Marques, 751 ",
+      "bairro": "Vila Pandolfo",
+      "cidade": "Franca",
+      "estado": "SP",
+      "id": 4
+    },
+    {
+      "name": "Rafael Antoniassi",
+      "date": "23/10/1982",
+      "cpf": "391.625.878-89",
+      "cep": "17210-410",
+      "logradouro": "Rua Antônio Gianini, 401 ",
+      "bairro": "Jardim Alvorada",
+      "cidade": "Jaú",
+      "estado": "SP",
+      "id": 5
     }
   ]
 }

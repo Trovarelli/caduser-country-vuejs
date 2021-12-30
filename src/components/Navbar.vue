@@ -52,7 +52,7 @@ export default {
         position: fixed;
         top: 0;
         width: 95%;
-        background-color: whitesmoke;
+        background-color: rgb(255,255,255);
         padding: 15px 50px;
         display: flex;
         justify-content: flex-end;
@@ -86,7 +86,7 @@ export default {
     }
     .classB a {
         color: #170263;
-        background: whitesmoke;
+        background: white;
         font-weight: bold;
         padding: 5px 20px 5px 20px;
         text-decoration: none;
